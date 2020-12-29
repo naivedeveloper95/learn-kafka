@@ -37,17 +37,6 @@ public class ProducerDemoKeys {
                     new ProducerRecord<String, String>(topic, key, value);
 
             logger.info("Key: " + key); // log the key
-            // id_0 is going to partition 1
-            // id_1 partition 0
-            // id_2 partition 2
-            // id_3 partition 0
-            // id_4 partition 2
-            // id_5 partition 2
-            // id_6 partition 0
-            // id_7 partition 2
-            // id_8 partition 1
-            // id_9 partition 2
-
 
             // send data - asynchronous
             producer.send(record, new Callback() {
